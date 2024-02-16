@@ -1,0 +1,68 @@
+body {
+    height: 100vh; 
+    font-size: 1.8rem;
+    position: center;
+    text-align: center;
+}
+
+.center {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.ityped-cursor {
+    font-size: 2.2rem;
+    opacity: 1;
+    -webkit-animation: blink 0.45s infinite;
+    -moz-animation: blink 0.45s infinite;
+    animation: blink 0.45s infinite;
+    animation-direction: alternate;
+}
+
+/* Style rules for dark mode detection. */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000000;
+        color: #ffffff;
+    }
+}
+
+/* Style rules for light mode detection. */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+/* Mobile device settings */
+@media screen and (min-width: 320px) and (max-width: 420px)  {
+    body {
+        font-size: 0.9rem;
+    }
+}
+
+/* Computer settings */
+
+@keyframes blink {
+    0% { opacity: 1; }
+    49% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@-webkit-keyframes blink {
+    0% { opacity: 1; }
+    49% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@-moz-keyframes blink {
+    0% { opacity: 1; }
+    49% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 0; }
+}
